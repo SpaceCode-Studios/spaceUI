@@ -1,9 +1,22 @@
-import { SpaceButton } from "space-ui";
+import { SpaceButton, SpaceShipButtonDark, SpaceShipButtonLight } from "index";
 
 function App() {
   return (
-    <div>
-      <SpaceButton buttonText="Toets" variant="SpaceOutline" className="text-lg bg-red-700"/>
+    <div
+      style={{
+        backgroundColor: "#000000",
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "30px",
+      }}
+    >
+      <SpaceButton variant="SpaceOrange">Sonder glow</SpaceButton>
+
+      <SpaceShipButtonDark>Met Glow Donker</SpaceShipButtonDark>
+      <SpaceShipButtonLight>Met Glow Lig</SpaceShipButtonLight>
     </div>
   );
 }

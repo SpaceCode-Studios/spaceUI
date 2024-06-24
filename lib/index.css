@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SpaceBlack - Colors */
+.SpaceBlack {
+  background-color: #474747;
+  color: white;
+}
+
+.SpaceBlack:hover {
+  background-color: #505050;
+  color: white;
+}
+
+/* SpaceOutline - Colors */
+.SpaceOutline {
+  background-color: hsl(0 0% 100%);
+  color: black;
+  border-width: 1px;
+}
+
+.SpaceOutline:hover {
+  background-color: hsl(0, 0%, 94%);
+  color: black;
+  border-width: 1px;
+}
+
+/* SpaceBlue - Color */
+.SpaceBlue {
+  background-color: #285ad6;
+  color: white;
+}
+
+.SpaceBlue:hover {
+  background-color: #3068f6;
+  color: white;
+}
+
+.SpaceRed {
+  background-color: rgb(164, 17, 17);
+  color: white;
+}
+
+.SpaceRed:hover {
+  background-color: rgb(178, 35, 35);
+  color: white;
+}
+
+.SpaceOrange {
+  background-color: rgb(238, 102, 29);
+  color: white;
+}
+
+.SpaceOrange:hover {
+  background-color: rgb(245, 120, 53);
+  color: white;
+}
+
+/* Apply transitions */
+.SpaceBlack,
+.SpaceBlack:hover,
+.SpaceOutline,
+.SpaceOutline:hover,
+.SpaceBlue,
+.SpaceBlue:hover,
+.SpaceRed,
+.SpaceRed:hover,
+.SpaceOrange,
+.SpaceOrange:hover {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+}

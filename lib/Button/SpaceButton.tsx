@@ -1,22 +1,32 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { cn } from "../utils";
 
-type VariantStyles = "SpaceBlack" | "SpaceOutline" | "SpaceBlue";
+type VariantStyles =
+  | "SpaceBlack"
+  | "SpaceOutline"
+  | "SpaceBlue"
+  | "SpaceRed"
+  | "SpaceOrange";
 
 type SpaceButtonProps = {
-  buttonText: string;
+  children?: ReactNode;
   className?: string;
   variant?: VariantStyles;
 };
 
 export const SpaceButton: React.FC<SpaceButtonProps> = ({
-  buttonText,
+  children,
   className,
   variant,
 }) => {
   return (
-    <button className={cn(`px-5 py-3 rounded-md ${variant}`, className)}>
-      {buttonText}
+    <button
+      className={cn(
+        `px-5 py-3 rounded-md text-sm font-thin ${variant}`,
+        className
+      )}
+    >
+      {children}
     </button>
   );
 };

@@ -12,7 +12,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
       name: "space-ui",
-      fileName: "space-ui",
+      fileName: "index",
     },
     // bundler options
     // externalize react-related imports
