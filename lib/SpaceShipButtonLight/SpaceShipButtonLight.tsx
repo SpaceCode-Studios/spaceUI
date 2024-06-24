@@ -51,7 +51,7 @@ export const SpaceShipButtonLight: React.FC<SpaceShipButtonLightProps> = ({
 
       <div
         className={cn(
-          "relative bg-white rounded-md border border-blue-500 backdrop-blur-xl text-blue-900 flex items-center justify-center w-full h-full text-sm antialiased shadow-lg shadow-blue-500/50",
+          "relative bg-white rounded-md border border-blue-500 backdrop-blur-xl text-black flex items-center justify-center w-full h-full text-sm antialiased shadow-lg shadow-blue-500/50",
           className
         )}
       >
